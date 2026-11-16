@@ -2,20 +2,21 @@ package kadai_018;
 
 public abstract class Kato_Chapter18 {
 
-    // フィールド(クラスの直下に書く)
+    //フィールド定義
     String familyName = "加藤";
-    String givenName;
+    String givenName = ""; //各名前が入る？
     String address = "東京都中野区〇×";
 
-    public void setGivenName(String givenName) {
-    	this.givenName = givenName;
-    }
-    
-    // メソッド(mainの外に書く)
+    //メソッド
     public void commonIntroduce() {
-        System.out.println("名前は" + familyName + givenName + "です。");
-        System.out.println("住所は" + address + "です。");
+        System.out.println("名前は" + familyName + givenName + "です");
+        System.out.println("住所は" + address + "です");
     }
     
-    abstract void eachIntroduce();
+    abstract public void eachIntroduce();
+    
+    public void execIntroduce() {
+    	commonIntroduce(); //共通の紹介呼び出す
+    	eachIntroduce(); //個別の紹介呼び出す
+    }
 }

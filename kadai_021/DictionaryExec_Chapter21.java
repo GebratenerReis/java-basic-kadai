@@ -7,8 +7,6 @@ public class DictionaryExec_Chapter21 {
 		// 調べたい4つの英単語
 		String[] words = { "apple", "banana", "grape", "orange" };
 
-		for (String word : words) {
-			dictionary.search(word);  // 1つずつ辞書で調べる
-		}
+		dictionary.search(words);  // 上の配列を渡す
 	}
 }

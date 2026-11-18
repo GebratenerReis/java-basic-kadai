@@ -20,12 +20,12 @@ public class Dictionary_Chapter21 {
 	
 	public void search (String[] words) {
 		for (String word : words) {
-		String mean = dictionary.get(word);
-		if (mean == null) {
-			System.out.println(word + "は辞書に存在しません");
-		} else {
-			System.out.println(word + "の意味は" + mean);
-		}
+			String mean = dictionary.get(word);
+			if (mean == null) {
+				System.out.println(word + "は辞書に存在しません");
+			} else {
+				System.out.println(word + "の意味は" + mean);
+			}
 		}
 	}
 }

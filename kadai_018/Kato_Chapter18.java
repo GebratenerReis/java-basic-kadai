@@ -3,9 +3,9 @@ package kadai_018;
 public abstract class Kato_Chapter18 {
 
     //フィールド定義
-    String familyName = "加藤";
-    String givenName = ""; //各名前が入る？
-    String address = "東京都中野区〇×";
+    public String familyName = "加藤";
+    public String givenName = ""; //各名前が入る？
+    public String address = "東京都中野区〇×";
 
     //メソッド
     public void commonIntroduce() {
